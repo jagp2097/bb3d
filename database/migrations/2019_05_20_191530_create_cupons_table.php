@@ -1,0 +1,54 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateCuponsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('cupons', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('codigo')->unique();
+            $table->string('tipo_cupon');
+            $table->integer('cupon_id')->unsigned();
+            $table->timestamps();
+        });
+
+
+// - el uuid o codigo
+// - el porcentaje de descuento
+// - la fecha de inicio
+// - la fecha en que termina
+// - un booleano que indica si ya se uso o no
+// - una referencia al usuario administrador que lo creo
+// - un campo que indique si es de 1 uso o generico
+
+// [11:55 AM, 5/17/2019] Dr. Antonio SS: 
+// [11:56 AM, 5/17/2019] Dr. Antonio SS: Si una persona paga por adelantado le hacemos un "cupon" de 1 uso con el 100% de descuento
+// [11:57 AM, 5/17/2019] Dr. Antonio SS: algo asi "d5eb802c-532d-4d8f-9077-b59fc9e41687"
+// [11:58 AM, 5/17/2019] Dr. Antonio SS: si hacemos una promo, hacemos un cupón genérico de 10 o 15% que funcione en un periodo de tiempo
+// [11:58 AM, 5/17/2019] Dr. Antonio SS: algo asi "bb3dmayo10"
+
+// [12:04 PM, 5/17/2019] Jesús Arnulfo 🐅🐯: O el cupón tendría la cantidad de dinero que se gastó?
+// [12:14 PM, 5/17/2019] Dr. Antonio SS: Yo creo que debería tener el producto
+// [12:15 PM, 5/17/2019] Dr. Antonio SS: O chance un campo que determine si es por porcentaje o cantidad...
+
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('cupons');
+    }
+}
