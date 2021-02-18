@@ -174,6 +174,7 @@
                 <div>
                     
                     <div class="row justify-content-center">
+                        <p>Proyecto Bb3D demo</p>
                         <p>Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a></p>
                     </div>
                     
