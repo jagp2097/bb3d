@@ -96,7 +96,7 @@ class RegisterController extends Controller
         ]);
 
         // Creación de cliente en openpay
-        $openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+        $openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 
         $customerData = [
             'name'             => $data['nombre'],
