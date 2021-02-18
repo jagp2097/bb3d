@@ -112,28 +112,6 @@
                 </div>
               </div>               
               @endcan
-
-              @can('index', bagrap\Pedido::class)
-              <div class="col-lg-4" onclick="window.location='{{ route('post.index') }}'" style="cursor:pointer;">
-                <div class="box wow">
-                  <a style="color:#ef597d;" role="button" href="{{ route('post.index') }}">
-                    <div class="icon"><i class="ion-android-create"></i></div>
-                    <h4 class="title"><a style="color:#ef597d;" role="button" href="{{ route('post.index') }}">Posts</a></h4>
-                  </a>
-                </div>
-              </div>               
-              @endcan
-              
-              {{-- <div class="col-lg-4" onclick="window.location='{{ route('users.index') }}'" style="cursor:pointer;">
-                <div class="box wow">
-                  <a style="color:#ef597d;" role="button" href="{{ route('users.index') }}">
-                    <div class="icon"><i class="ion-ios-glasses"></i></div>
-                    <h4 class="title"><a style="color:#ef597d;" role="button" href="{{ route('users.index') }}">Admin</a></h4>
-                    {{-                   <p class="description"></p>
-                    <p class="description"></p> -}}
-                  </a>
-                </div>
-              </div> --}}
               
               @can('create', bagrap\Ginecologo::class)
               <div class="col-lg-4" onclick="window.location='{{ route('ginecologo.index') }}'" style="cursor:pointer;">

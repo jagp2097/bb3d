@@ -14,10 +14,10 @@
   @yield('metas-fb')
 
   <!-- Favicons -->
-  <link href="{{ asset('images/pagina/bb3d_logo.ico') }}" rel="icon">
-  <link href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="//{{ asset('images/pagina/bb3d_logo.ico') }}" rel="icon">
+  <link href="//{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
   
-  <script src="{{ asset('lib/jquery/jquery.min.js') }}"></script>
+  <script src="//{{ asset('lib/jquery/jquery.min.js') }}"></script>
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -26,20 +26,20 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   
   <!-- Bootstrap CSS File -->
-  <link href="{{ asset('lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="//{{ asset('lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <!-- W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   
   <!-- Libraries CSS Files -->
-  <link href="{{ asset('lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('lib/magnific-popup/magnific-popup.css') }}" rel="stylesheet">
-  {{-- <link href="{{ asset('lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet"> --}}
+  <link href="//{{ asset('lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="//{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet">
+  <link href="//{{ asset('lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+  <link href="//{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+  <link href="//{{ asset('lib/magnific-popup/magnific-popup.css') }}" rel="stylesheet">
+  {{-- <link href="//{{ asset('lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet"> --}}
   
   <!-- Main Stylesheet File -->
-  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+  <link href="//{{ asset('css/style.css') }}" rel="stylesheet">
   
   <style>
     #header-sticky-wrapper {
@@ -68,7 +68,7 @@
           <div class="container">
             
             <a href="{{ url('/') }}">
-              <img src="{{ asset('images/pagina/bb3d_logo1.png') }}" class="logo_bb3d" alt="Bb3D">
+              <img src="//{{ asset('images/pagina/bb3d_logo1.png') }}" class="logo_bb3d" alt="Bb3D">
             </a>
             
             {{-- <h1><a href="#body" class="scrollto">Bagr<span>ap</span></a></h1> --}}
@@ -168,25 +168,25 @@
             {{-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> --}}
             
             <!-- JavaScript Libraries -->
-            <script src="{{ asset('lib/jquery/jquery-migrate.min.js') }}"></script>
-            <script src="{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-            <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
-            <script src="{{ asset('lib/superfish/hoverIntent.js') }}"></script>
-            <script src="{{ asset('lib/superfish/superfish.min.js') }}"></script>
-            <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
-            <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
-            <script src="{{ asset('lib/magnific-popup/magnific-popup.min.js') }}"></script>
-            <script src="{{ asset('lib/sticky/sticky.js') }}"></script>
+            <script src="//{{ asset('lib/jquery/jquery-migrate.min.js') }}"></script>
+            <script src="//{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+            <script src="//{{ asset('lib/easing/easing.min.js') }}"></script>
+            <script src="//{{ asset('lib/superfish/hoverIntent.js') }}"></script>
+            <script src="//{{ asset('lib/superfish/superfish.min.js') }}"></script>
+            <script src="//{{ asset('lib/wow/wow.min.js') }}"></script>
+            <script src="//{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
+            <script src="//{{ asset('lib/magnific-popup/magnific-popup.min.js') }}"></script>
+            <script src="//{{ asset('lib/sticky/sticky.js') }}"></script>
             <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
-            <script src="{{ asset('lib/jQuery-Mask/jquery.mask.min.js') }}"></script>
+            <script src="//{{ asset('lib/jQuery-Mask/jquery.mask.min.js') }}"></script>
             
             
             <!-- Contact Form JavaScript File -->
-            {{-- <script src="{{ asset('contactform/contactform.js') }}"></script> --}}
+            {{-- <script src="//{{ asset('contactform/contactform.js') }}"></script> --}}
             @yield('scripts')
             
             <!-- Template Main Javascript File -->
-            <script src="{{ asset('js/main.js') }}"></script>
+            <script src="//{{ asset('js/main.js') }}"></script>
             
           </body>
           </html>
