@@ -8,14 +8,14 @@
 	<meta content="" name="description">
 
 	<!-- Favicons -->
-    <link href="//{{ asset('images/pagina/bb3d_logo.ico') }}" rel="icon">
+    <link href="{{ asset('images/pagina/bb3d_logo.ico') }}" rel="icon">
 	<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <title>{{ config('app.name', 'Bb3D') }}</title>
     
-    <link rel="stylesheet" href="//{{ asset('lib/normalize/normalize.css') }}">
-    <link rel="stylesheet" href="//{{ asset('lib/gridsystem/grid.css') }}">
-    <link rel="stylesheet" href="//{{ asset('css/styleshome.css') }}">
+    <link rel="stylesheet" href="{{ asset('lib/normalize/normalize.css') }}">
+    <link rel="stylesheet" href="{{ asset('lib/gridsystem/grid.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styleshome.css') }}">
     
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
     <header id="header-guest">
         <nav id="nav">
             <a id="logo-link" href="{{ url('/') }}">
-                <img src="//{{ asset('images/pagina/bb3d_logo1.png') }}" class="logo_bb3d" alt="Bb3D logo">
+                <img src="{{ asset('images/pagina/bb3d_logo1.png') }}" class="logo_bb3d" alt="Bb3D logo">
             </a>
             <div class="row">
                 <ul class="main-nav">
@@ -120,7 +120,7 @@
         <div class="row">
             <div class="col span-1-of-3">
                 <div class="box">
-                    <img src="//{{ asset('images/pagina/prueba.jpeg') }}" alt="">
+                    <img src="{{ asset('images/pagina/prueba.jpeg') }}" alt="">
                     <p class="product-price">$1,199.00 <small>c/u</small></p>
                     <h3 class="product-title">Bb3d - Medida 4 cm x 6 cm</h3>
                     <p class="product-paragraph">Bb3d hecho con material acrílico y con cuadro incluido</p>
@@ -128,7 +128,7 @@
             </div>
             <div class="col span-1-of-3">
                 <div class="box">
-                    <img src="//{{ asset('images/pagina/prueba.jpeg') }}" alt="">
+                    <img src="{{ asset('images/pagina/prueba.jpeg') }}" alt="">
                     <p class="product-price">$1,349.00 <small>c/u</small></p>
                     <h3 class="product-title">Bb3D - Medida 6 cm x 8 cm</h3>
                     <p class="product-paragraph">Bb3d hecho con material acrílico con cuadro incluido</p>
@@ -136,7 +136,7 @@
             </div>
             <div class="col span-1-of-3">
                 <div class="box">
-                    <img src="//{{ asset('images/pagina/prueba.jpeg') }}" alt="">
+                    <img src="{{ asset('images/pagina/prueba.jpeg') }}" alt="">
                     <p class="product-price">$1,499.00 <small>c/u</small></p>
                     <h3 class="product-title">Bb3D - Medida 8 cm x 10 cm</h3>
                     <p class="product-paragraph">Bb3d hecho con material acrílico y con cuadro incluido</p>
@@ -155,7 +155,7 @@
             <div class="col span-1-of-8"></div>
             <div class="col span-6-of-8">
                 <video class="video-steps" controls>
-                    <source src="//{{ asset('images/pagina/video-steps.mp4') }}" type="video/mp4">
+                    <source src="{{ asset('images/pagina/video-steps.mp4') }}" type="video/mp4">
                     </video>
                 </div>
                 <div class="col span-1-of-8"></div>

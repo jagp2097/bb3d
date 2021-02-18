@@ -8,20 +8,20 @@
 	<meta content="Bb3D es un modelo impreso en 3D de tu bebé, que se realiza a partir de un estudio ecográfico." name="description">
 
 	<!-- Favicons -->
-    <link href="//{{ asset('images/pagina/bb3d_logo.ico') }}" rel="icon">
+    <link href="{{ asset('images/pagina/bb3d_logo.ico') }}" rel="icon">
 	<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <title>{{ config('app.name', 'Bb3D') }}</title>
     
-    <link rel="stylesheet" href="//{{ asset('lib/normalize/normalize.css') }}">
-    <link rel="stylesheet" href="//{{ asset('lib/gridsystem/grid.css') }}">
-    <link rel="stylesheet" href="//{{ asset('css/styleshome.css') }}">
+    <link rel="stylesheet" href="{{ asset('lib/normalize/normalize.css') }}">
+    <link rel="stylesheet" href="{{ asset('lib/gridsystem/grid.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styleshome.css') }}">
     
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="//{{ asset('lib/owlCarousel2.3/assets/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="//{{ asset('lib/owlCarousel2.3/assets/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('lib/owlCarousel2.3/assets/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('lib/owlCarousel2.3/assets/owl.theme.default.min.css') }}">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -33,7 +33,7 @@
     <header id="header-guest">
         <nav id="nav">
             <a id="logo-link" href="{{ url('/') }}">
-                <img src="//{{ asset('images/pagina/bb3d_logo1.png') }}" class="logo_bb3d" alt="Bb3D logo">
+                <img src="{{ asset('images/pagina/bb3d_logo1.png') }}" class="logo_bb3d" alt="Bb3D logo">
             </a>
             <div class="row">
                 <ul class="main-nav">
@@ -125,7 +125,7 @@
             @foreach ($paquetes as $paquete)
             <div class="col span-1-of-3">
                 <div class="box">
-                    <img src="//{{ asset('images/productos') }}/{{ $paquete->foto }}" alt="">
+                    <img src="{{ asset('images/productos') }}/{{ $paquete->foto }}" alt="">
                     <p class="product-price">${{ $paquete->precio }} <small>c/u</small></p>
                     <h3 class="product-title">{{ $paquete->nombre }}</h3>
                     <p class="product-paragraph">{{ $paquete->descripcion }}</p>
@@ -158,7 +158,7 @@
             <div class="col span-1-of-8"></div>
             <div class="col span-6-of-8">
                 <video class="video-steps" controls>
-                    <source src="//{{ asset('images/pagina/video-steps.mp4') }}" type="video/mp4">
+                    <source src="{{ asset('images/pagina/video-steps.mp4') }}" type="video/mp4">
                 </video>
             </div>
             <div class="col span-1-of-8"></div>
@@ -189,18 +189,18 @@
             -->
             
             <!-- JavaScript Libraries -->
-            <script src="//{{ asset('lib/jquery/jquery.min.js') }}"></script>
-            <script src="//{{ asset('lib/jquery/jquery-migrate.min.js') }}"></script>
-            <script src="//{{ asset('lib/easing/easing.min.js') }}"></script>
-            <script src="//{{ asset('lib/superfish/hoverIntent.js') }}"></script>
-            <script src="//{{ asset('lib/superfish/superfish.min.js') }}"></script>
-            <script src="//{{ asset('lib/waypoint/jquery.waypoints.min.js') }}"></script>    
-            <script src="//{{ asset('lib/owlCarousel2.3/owl.carousel.min.js') }}"></script>
+            <script src="{{ asset('lib/jquery/jquery.min.js') }}"></script>
+            <script src="{{ asset('lib/jquery/jquery-migrate.min.js') }}"></script>
+            <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
+            <script src="{{ asset('lib/superfish/hoverIntent.js') }}"></script>
+            <script src="{{ asset('lib/superfish/superfish.min.js') }}"></script>
+            <script src="{{ asset('lib/waypoint/jquery.waypoints.min.js') }}"></script>    
+            <script src="{{ asset('lib/owlCarousel2.3/owl.carousel.min.js') }}"></script>
 
             {{-- FontAwesome --}}
             <script src="https://kit.fontawesome.com/7ea333a476.js"></script>   
             <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
-            <script src="//{{ asset('js/bb3d-home.js') }}"></script>
+            <script src="{{ asset('js/bb3d-home.js') }}"></script>
             
         </body>
         </html>
