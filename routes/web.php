@@ -146,25 +146,25 @@ Route::prefix('pago')->group(function() {
 Route::resource('category', 'CategoryController');
 
 
-Route::resource('post', 'PostController');
-Route::get('post/{post_title_slug}', 'PostController@show')->name('post.show');
-Route::get('post-results', 'PostController@search')->name('post.search');
-Route::get('post-results/{category}', 'PostController@searchCategory')->name('post.searchCat');
-Route::get('posts', 'PostController@list')->name('post.list');
+// Route::resource('post', 'PostController');
+// Route::get('post/{post_title_slug}', 'PostController@show')->name('post.show');
+// Route::get('post-results', 'PostController@search')->name('post.search');
+// Route::get('post-results/{category}', 'PostController@searchCategory')->name('post.searchCat');
+// Route::get('posts', 'PostController@list')->name('post.list');
 
 
 Route::resource('opinion', 'OpinionController');
 
 
-Route::prefix('legal')->group(function() {
-    Route::get('/aviso-privacidad', function(){
-        return view('legal.aviso-privacidad');
-    })->name('legal.aviso');
+// Route::prefix('legal')->group(function() {
+//     Route::get('/aviso-privacidad', function(){
+//         return view('legal.aviso-privacidad');
+//     })->name('legal.aviso');
 
-    Route::get('/terminos-condiciones', function(){
-        return view('legal.terminos-condiciones');
-    })->name('legal.terminos');
-});
+//     Route::get('/terminos-condiciones', function(){
+//         return view('legal.terminos-condiciones');
+//     })->name('legal.terminos');
+// });
 
 
 Route::get('/', 'HomeController@index')->name('home');

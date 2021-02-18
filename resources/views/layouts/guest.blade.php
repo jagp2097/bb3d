@@ -42,7 +42,6 @@
                     <li><a href="#info-bb3d">¿Qué es un Bb3D?</a></li>
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#obtener">Obtener tu Bb3D</a></li>
-                    <li><a href="#posts">Posts recientes</a></li>
                     <li><a href="{{ route('login') }}">Log in</a></li>
                     {{-- @if(Route::has('register'))
                     {{- <li><a href="{{ route('register') }}">Register</a></li> -}}
@@ -56,7 +55,6 @@
                             {{ Cart::count() }}<i style="vertical-align: middle; margin-left:5px;font-size:1.3em;" class="ion-ios-cart my-auto"></i>
                         </a>
                     </li>
-                    <li><a href="#posts">Posts recientes</a></li>
                     @endif
                     <li class="menu-has-children"><a href="#">{{ Auth::user()->perfil->nombre }}</a>
                         <ul>
@@ -168,35 +166,6 @@
     </section>
     {{-- FIN PASOS COMPRAR --}}
 
-    {{-- INICIO POST RECIENTER --}}
-    <section id="posts" class="posts-recientes">
-        <div class="row">
-            <h2 class="section-title">Posts recientes</h2>
-        </div>
-        <div class="row">
-            <div class="owl-carousel carousel-posts">
-                
-                @foreach ($posts as $post)
-                    <figure>
-                        <img src="{{ asset('images/posts_thumbnails') }}/{{ $post->post_thumbnail }}" alt="">
-                        <div class="overlay">
-                            <div class="overlay-text">
-                                <h2>{{ $post->post_title }}</h2>
-                                <div class="excerpt-post-recent">
-                                    {!! html_entity_decode($post->excerptPost($post->post_content), ENT_HTML5) !!}
-                                </div>
-                                <div class="buttons-result float-right">
-                                    <a href="{{ route('post.show', $post->post_title_slug) }}" class="btn-sec">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>                    
-                @endforeach
-
-            </div>
-        </div>
-    </section>
-    {{-- FIN INICIO POST RECIENTER --}}
         
         <!--==========================
             Footer
