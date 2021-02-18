@@ -71,13 +71,13 @@
                   </form>              
                 @endcan
                 
-                {{-- @can('delete', $paquete)
+                @can('delete', $paquete)
                 <form action="{{ route('paquete.destroy', $paquete->id) }}" style="display:inline" method="POST">
                   @method("DELETE")
                   @csrf
                   <button type="submit" class="btn-del mt-2">Eliminar</button>
                 </form>
-                @endcan --}}
+                @endcan
               </div>
 
           </div>
