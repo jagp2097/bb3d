@@ -76,32 +76,12 @@
           <tr>
             
             <td style="color: #EF597D; font-size: 12px; line-height: 20px; padding: 15px 12px 15px 12px;" align="center" width="50%" valing="top">
-              Guadalajara 910, Mitras Sur, Monterrey, Nuevo León C.P: 64020 <br/>
-              <font color="#EF597D">contacto@bb3d.mx</font>  <br/>
-              +52 01 81 2721 3864 <br/>
+              
             </td>
             
             <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
             
             <td style="color: #EF597D; font-size: 12px; line-height: 20px; padding: 15px 12px 15px 12px;" align="center" width="50%" valing="top">
-              
-              
-              <a style="text-decoration: none;" href="https://www.facebook.com/bebe3dmx/" target="_blank">
-                
-                <img style="width: 20px; vertical-align: middle;" src="{{ asset('images/pagina/svg/logo-facebook.svg') }}" alt=""/>
-                
-                <font color="#EF597D">bebe3dmx/</font> 
-                
-              </a>
-              
-              <br/>
-              
-              <a style="text-decoration: none;" href="https://www.instagram.com/bb3d_mx/" target="_blank">
-                
-                <img style="width: 20px; vertical-align: middle; margin-left: -7px; fill: #EF597D;" src="{{ asset('images/pagina/svg/logo-instagram.svg') }}" alt=""/>
-                <font color="#EF597D">bb3d_mx/</font> 
-                
-              </a>
               
             </td>
             
@@ -117,7 +97,6 @@
       
       <td align="center" bgcolor="#f2f5f8"  style="color: #EF597D; font-size: 11px; line-height: 15px; font-family: 'Montserrat', sans-serif; word-spacing: 2px; padding: 25px 15px 25px 15px;">
         
-        Copyright © 2019 by Master Deploy. All rights reserved. <br/>
         
       </td>
       

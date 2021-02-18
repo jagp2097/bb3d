@@ -10,9 +10,9 @@
 <script type="text/javascript">
   // TODO: Agregar las funciones de validacion a la tarjeta
   $(document).ready(function() {
-    OpenPay.setId('mpqoljlvexjbgev0xwyp');
-    OpenPay.setApiKey('pk_2f5b2ebacb4943ff9f9296baf55ba4e5');
-    OpenPay.setSandboxMode(false);
+    OpenPay.setId('mj7glzez1snwbqq4lcfz');
+    OpenPay.setApiKey('pk_ca4d30bf53d1422a973c5837b3bb57ae');
+    OpenPay.setSandboxMode(true);
     
     var deviceDataId = OpenPay.deviceData.setup("create-card-form", "deviceIdHiddenFieldName");
     

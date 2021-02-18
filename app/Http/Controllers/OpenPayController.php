@@ -30,7 +30,7 @@ class OpenPayController extends Controller {
 
 	public function getCardsClient() {
 
-		$openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+		$openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 		$this->authorize('getCardsClient', Openpay::class);
 
 		$findDataRequest = [
@@ -62,7 +62,7 @@ class OpenPayController extends Controller {
 
 		$this->authorize('addCardClient', Openpay::class);
 
-		$openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+		$openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 
 		try {
 
@@ -94,7 +94,7 @@ class OpenPayController extends Controller {
 
 		try {
 
-			$openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+			$openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 
 			$customer = $openpay->customers->get(Auth::user()->openpay_id);
 			$card = $customer->cards->get($idCard);
@@ -116,7 +116,7 @@ class OpenPayController extends Controller {
 		if (Cart::count() == 0) {
 			return abort(401, "This action is unauthorized.");
 		} else {
-			$openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+			$openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 
 			$customer = $openpay->customers->get(Auth::user()->openpay_id);
 
@@ -151,7 +151,7 @@ class OpenPayController extends Controller {
 
 				$user = User::find(Auth::id());
 
-				$openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+				$openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 				$customer = $openpay->customers->get($user->openpay_id);
 
 				$referencias = [];
@@ -273,7 +273,7 @@ class OpenPayController extends Controller {
 
 		try {
 
-			$openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+			$openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 
 			$refundData = [
 				'description' => $request->input('description_refund'),

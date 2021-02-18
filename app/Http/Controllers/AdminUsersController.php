@@ -30,7 +30,7 @@ class AdminUsersController extends Controller
      */
     public function index()
     {
-        $openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+        $openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 
         $findDataRequest = [
             'creation[gte]' => '2019-01-01',
@@ -52,7 +52,7 @@ class AdminUsersController extends Controller
     public function deleteCustomer($idCustomer)
     {
         // dd($idCustomer);
-        $openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+        $openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 
         $customer = $openpay->customers->get($idCustomer);
 
@@ -86,7 +86,7 @@ class AdminUsersController extends Controller
      */
     public function store(UsersRequest $request)
     {
-        // $openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+        // $openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 
         $user = new User();
 

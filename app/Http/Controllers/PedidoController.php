@@ -42,7 +42,7 @@ class PedidoController extends Controller
     public function refundForm($user_id, $transaction_id, $pedido)
     {
       $this->authorize('refundForm', Pedido::class);
-      $openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+      $openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
 
       $user = User::findOrFail($user_id);
 

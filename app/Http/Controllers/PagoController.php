@@ -149,7 +149,7 @@ class PagoController extends Controller
     {
         if (Gate::allows('pagoTarjetaView')) {
 
-            $openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+            $openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
             $customer = $openpay->customers->get(Auth::user()->openpay_id);
     
             // Obtener tarjetas
@@ -199,7 +199,7 @@ class PagoController extends Controller
             try {
 
 
-            $openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+            $openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
             $customer = $openpay->customers->get(Auth::user()->openpay_id);
 
             $order = array();
@@ -245,7 +245,7 @@ class PagoController extends Controller
     {
         if (Gate::allows('processingPayment')) {
 
-            $openpay = OpenPay::getInstance('mpqoljlvexjbgev0xwyp', 'sk_df7293580ca74a7685d90f3192ded753');
+            $openpay = OpenPay::getInstance('mj7glzez1snwbqq4lcfz', 'sk_9469f17116f443caa51861979bcf0a36');
             $payment = $openpay->customers->get(Auth::user()->openpay_id)->charges->get(URL::getRequest()->id);
 
             // Get the request instance.
